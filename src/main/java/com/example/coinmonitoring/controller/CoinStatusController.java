@@ -20,7 +20,7 @@ public class CoinStatusController {
   @GetMapping
   @RequestMapping("/")
   public String home(){
-    return "Hello AWS";
+    return "Hello AWS from Dejota";
   }
 
   @GetMapping
