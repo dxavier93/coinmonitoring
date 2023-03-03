@@ -82,7 +82,7 @@ public class CoinStatusService {
 
       int index = json.indexOf(CURR) + CURR.length() + 3;
       String euro = json.substring(index, index + 6);
-      Double bdEuro = Double.valueOf(Double.parseDouble(euro));
+      Double bdEuro = Double.parseDouble(euro);
 
       return Optional.of(bdEuro);
     } catch (Exception ex) {

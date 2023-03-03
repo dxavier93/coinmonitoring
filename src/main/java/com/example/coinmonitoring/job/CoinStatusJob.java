@@ -22,7 +22,7 @@ public class CoinStatusJob {
   private static final long ONE_HOUR = 60 * MINUTE;
 
   //@Scheduled(cron = "0 15 10 15 * ?", zone = "Europe/Lisbon")
-  @Scheduled(fixedDelay = FIVE_MINUTES, initialDelay = FIVE_MINUTES)
+  @Scheduled(fixedDelay = FIVE_MINUTES)
   private void jobCoinStatus() {
     LocalDateTime localDateTime = LocalDateTime.now();
     Optional<Double> optEuro = service.verifyEuroValue(localDateTime);
