@@ -21,7 +21,7 @@ public class CoinStatusController {
   @GetMapping
   @RequestMapping("/")
   public String home(){
-    return "Hello AWS from Dejota";
+    return "Hello AWS from Dejota. Updating Cors";
   }
 
   @GetMapping
